@@ -1,11 +1,15 @@
+import { Outlet } from 'react-router-dom'
 import './index.css'
+import Comp from './comp'
+import Navbar from './Navbar'
 
 function App() {
 
 
   return (
     <>
-      <h1 className="text-orange-500">Hello, This is a personal portfolio website</h1>
+      <Navbar />
+      <Outlet />
     </>
   )
 }
