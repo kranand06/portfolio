@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { RouterProvider , createBrowserRouter } from 'react-router-dom'
 import Comp from './comp.jsx'
+import Error404 from './Error404.jsx'
 
 const route = createBrowserRouter([
   {
@@ -14,7 +15,10 @@ const route = createBrowserRouter([
         path: '',
         element: <Comp />,
       },
-
+      {
+        path: '*',
+        element: <Error404 />,
+      },
     ]
   }
 ])
