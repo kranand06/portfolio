@@ -20,9 +20,7 @@ function Navbar() {
 
             <header className="shadow sticky top-0 w-full z-10">
                 <div className='flex flex-row items-center justify-between p-8 bg-[#121212]'>
-                    <div className='text-white text-5xl font-bold '>
-                        Portfolio
-                    </div>
+                    <Link to="/" className='text-white text-5xl font-bold'>Portfolio</Link>
                     <div className=" hidden  w-full lg:flex lg:w-auto space-x-16  text-2xl font-normal">
 
                         <NavLink to="/" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Home</NavLink>
@@ -42,7 +40,7 @@ function Navbar() {
                         >
                             {(anchorEl == null)? <div>Menu</div> : <div>Close</div>}
                         </div>
-                        <Menu
+                        <Menu className=''
                             id="basic-menu"
                             anchorEl={anchorEl}
                             open={open}
@@ -51,7 +49,7 @@ function Navbar() {
                                 'aria-labelledby': 'basic-button',
                             }}
                         >
-                            <MenuItem onClick={handleClose}><Link to="/" >Home</Link></MenuItem>
+                            <MenuItem className='background-[#121212]' onClick={handleClose}><Link to="/" >Home</Link></MenuItem>
                             <MenuItem onClick={handleClose}><Link to="/project" >Project</Link></MenuItem>
                             <MenuItem onClick={handleClose}><Link to="/about" >About</Link></MenuItem>
                             <MenuItem onClick={handleClose}><Link to="/contact" >Contact</Link></MenuItem>
