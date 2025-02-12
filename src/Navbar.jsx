@@ -31,6 +31,7 @@ function Navbar() {
                         <NavLink to="/contact" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Contact</NavLink>
                     </div>
                     <div className='flex lg:hidden space-x-5'>
+                        {/* (anchorEl == open)? <div>Menu</div> : <div>Close</div> */}
                         <div
                             id="basic-button"
                             aria-controls="basic-menu"
@@ -39,7 +40,7 @@ function Navbar() {
                             onClick={handleClick}
                             className="text-white text-2xl font-normal cursor-pointer"
                         >
-                            Menu
+                            {(anchorEl == null)? <div>Menu</div> : <div>Close</div>}
                         </div>
                         <Menu
                             id="basic-menu"
