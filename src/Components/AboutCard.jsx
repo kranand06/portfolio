@@ -13,13 +13,3 @@ function AboutCard({ title, img, description }) {
 }
 
 export default AboutCard
-
-//             <div className='text-center md:text-left flex flex-col justify-center w-full'>
-//                 <h3 className='text-xl md:text-2xl font-semibold'>{title}</h3>
-//                 <p className='text-sm md:text-base text-gray-300'>{description}</p>
-
-// for image : className='p-[5%] w-[30%] h-auto'
-
-            // <div className='w-[70%] h-16 py-[5%] p-[5%]'>
-            //     <h3 className='text-3xl'>{title}</h3>
-            //     <p className='text-xl'>{description}</p>
