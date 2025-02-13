@@ -24,7 +24,7 @@ function Home() {
       </div>
 
       <div className='w-full h-auto lg:w-[50%] flex justify-center mt-10 lg:mt-0'>
-        <img src="React.png" alt="my pic Png hero" className='w-[80%] md:w-[60%]' />
+        <img src="HeroPage.png" alt="my pic Png hero" className='w-[80%] md:w-[80%] rounded-full' />
       </div>
     </div>
   )
