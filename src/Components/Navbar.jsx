@@ -24,8 +24,8 @@ function Navbar() {
                     <div className=" hidden  w-full lg:flex lg:w-auto space-x-16  text-2xl font-normal">
 
                         <NavLink to="/" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Home</NavLink>
-                        <NavLink to="/project" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Projects</NavLink>
                         <NavLink to="/about" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>About</NavLink>
+                        <NavLink to="/project" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Projects</NavLink>
                         <NavLink to="/contact" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Contact</NavLink>
                     </div>
                     <div className='flex lg:hidden space-x-5'>
@@ -50,8 +50,8 @@ function Navbar() {
                             }}
                         >
                             <MenuItem className='background-[#121212]' onClick={handleClose}><Link to="/" >Home</Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link to="/project" >Project</Link></MenuItem>
                             <MenuItem onClick={handleClose}><Link to="/about" >About</Link></MenuItem>
+                            <MenuItem onClick={handleClose}><Link to="/project" >Project</Link></MenuItem>
                             <MenuItem onClick={handleClose}><Link to="/contact" >Contact</Link></MenuItem>
                         </Menu>
 
