@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const AnimatedText = () => {
   const [text] = useTypewriter({
-    words: ['Web Developer', 'Software Developer', 'Vlogger'],
+    words: ['Web Developer', 'Software Engineer', 'Vlogger'],
     loop: 3000,
   })
 

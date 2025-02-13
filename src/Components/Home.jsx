@@ -5,7 +5,7 @@ import AnimatedText from './AnimatedText';
 
 function Home() {
   return (
-    <div className='flex flex-col lg:flex-row justify-between items-center lg:items-start h-screen w-full p-10 lg:p-20 bg-[#121212] text-[#E0E0E0]'>
+    <div className='flex flex-col lg:flex-row justify-between items-center  lg:items-start  w-full p-10 lg:p-20 bg-[#121212] text-[#E0E0E0]'>
 
       <div className='w-full lg:w-[50%] lg:pt-10 text-center lg:text-left flex flex-col justify-center gap-8'>
 
@@ -24,7 +24,7 @@ function Home() {
       </div>
 
       <div className='w-full h-auto lg:w-[50%] flex justify-center mt-10 lg:mt-0'>
-        <img src="React.png" alt="image" className='w-[80%] md:w-[60%]' />
+        <img src="React.png" alt="my pic Png hero" className='w-[80%] md:w-[60%]' />
       </div>
     </div>
   )

@@ -1,7 +1,11 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+
+
 
 function Navbar() {
 
@@ -18,15 +22,17 @@ function Navbar() {
     return (
         <>
 
-            <header className="shadow sticky top-0 w-full z-10">
+            <header className="shadow  top-0 w-full z-10">
                 <div className='flex flex-row items-center justify-between p-8 bg-[#121212] mx-auto px-auto'>
                     <Link to="/" className='text-white text-4xl md:text-5xl lg:text-6xl font-bold '>Portfolio</Link>
                     <div className=" hidden  w-full lg:flex lg:w-auto space-x-16  text-2xl font-normal">
 
-                        <NavLink to="/" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Home</NavLink>
-                        <NavLink to="/about" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>About</NavLink>
-                        <NavLink to="/project" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Projects</NavLink>
-                        <NavLink to="/contact" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Contact</NavLink>
+                        <Link to="/" className='text-white hover:text-[#BB86FC] cursor-pointer'>Home</Link>
+                        <a href="#about" className='text-white hover:text-[#BB86FC] cursor-pointer'>About</a>
+                        <a href="#project" className='text-white hover:text-[#BB86FC] cursor-pointer'>Project</a>
+                        <a href="#skills" className='text-white hover:text-[#BB86FC] cursor-pointer'>Skills</a>
+                        <a href="#contact" className='text-white hover:text-[#BB86FC] cursor-pointer'>Contact</a>
+
                     </div>
                     <div className='flex lg:hidden space-x-5'>
                         {/* (anchorEl == open)? <div>Menu</div> : <div>Close</div> */}
@@ -38,7 +44,7 @@ function Navbar() {
                             onClick={handleClick}
                             className="text-white text-2xl font-normal cursor-pointer"
                         >
-                            {(anchorEl == null)? <div>Menu</div> : <div>Close</div>}
+                            {(anchorEl == null)? <IoMenu /> : <IoClose />}
                         </div>
                         <Menu className=''
                             id="basic-menu"
@@ -49,10 +55,11 @@ function Navbar() {
                                 'aria-labelledby': 'basic-button',
                             }}
                         >
-                            <MenuItem className='background-[#121212]' onClick={handleClose}><Link to="/" >Home</Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link to="/about" >About</Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link to="/project" >Project</Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link to="/contact" >Contact</Link></MenuItem>
+                            <MenuItem onClick={handleClose}><Link to="/" >Home</Link></MenuItem>
+                            <MenuItem onClick={handleClose}><a href="#about" >About</a></MenuItem>
+                            <MenuItem onClick={handleClose}><a href="#project" >Project</a></MenuItem>
+                            <MenuItem onClick={handleClose}><a href="#skills" >Skills</a></MenuItem>
+                            <MenuItem onClick={handleClose}><a href="#contact" >Contact</a></MenuItem>
                         </Menu>
 
                     </div>
