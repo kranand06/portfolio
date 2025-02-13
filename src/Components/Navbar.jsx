@@ -19,8 +19,8 @@ function Navbar() {
         <>
 
             <header className="shadow sticky top-0 w-full z-10">
-                <div className='flex flex-row items-center justify-between p-8 bg-[#121212]'>
-                    <Link to="/" className='text-white text-5xl font-bold'>Portfolio</Link>
+                <div className='flex flex-row items-center justify-between p-8 bg-[#121212] mx-auto px-auto'>
+                    <Link to="/" className='text-white text-4xl md:text-5xl lg:text-6xl font-bold '>Portfolio</Link>
                     <div className=" hidden  w-full lg:flex lg:w-auto space-x-16  text-2xl font-normal">
 
                         <NavLink to="/" className={({ isActive }) => ` ${(isActive == true) ? "text-[#BB86FC]" : "text-white"} hover:text-[#BB86FC]`}>Home</NavLink>
