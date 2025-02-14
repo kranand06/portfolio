@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 
 function Projects() {
   return (
-    <div id='skills' className='min-h-screen w-full p-3 px-5 lg:p-10 bg-[#121212] text-[#ffffff] '>
+    <div id='project' className='min-h-screen w-full p-3 px-5 lg:p-10 bg-[#121212] text-[#ffffff] '>
         <h1 className='text-2xl md:text-4xl text-center md:text-left mx-3 my-10 font-medium'>My Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {ProjectJs.map((item) => (
