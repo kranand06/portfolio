@@ -9,8 +9,8 @@ function Page() {
     <div className='bg-[#121212]'>
     <Home />
     <About />
-    <Skills />
     <Projects />
+    <Skills />
     </div>
   )
 }
