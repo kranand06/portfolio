@@ -13,8 +13,8 @@ function Footer() {
 
         <nav className="flex space-x-6 text-sm md:text-base">
           <a href="#about" className="hover:text-[#BB86FC] transition-all">About</a>
-          <a href="#skills" className="hover:text-[#BB86FC] transition-all">Skills</a>
           <a href="#project" className="hover:text-[#BB86FC] transition-all">Projects</a>
+          <a href="#skills" className="hover:text-[#BB86FC] transition-all">Skills</a>
         </nav>
 
         <div className="flex space-x-6 text-2xl mt-4 md:mt-0">
