@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from './Home'
-import About from './About'
-import Skills from './Skills'
-import Projects from './Projects'
+import Home from './Hero Section/Home.jsx'
+import About from './About/About.jsx'
+import Skills from './Skills/Skills.jsx'
+import Projects from './MyProjects/Projects.jsx'
 import Footer from './Footer'
-import Contact from './Contact'
+import Contact from './Contact/Contact.jsx'
 
 function Page() {
   return (

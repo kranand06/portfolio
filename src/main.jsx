@@ -2,8 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { RouterProvider , createBrowserRouter } from 'react-router-dom'
-import Comp from './Components/comp.jsx'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Error404 from './Components/Error404.jsx'
 import Page from './Components/Page.jsx'
 
@@ -14,7 +13,7 @@ const route = createBrowserRouter([
     children: [
       {
         path: '',
-        element:<Page />,
+        element: <Page />,
       },
       {
         path: '*',
@@ -25,7 +24,7 @@ const route = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
-  <RouterProvider router={route} />
-  // </StrictMode>,
+  <StrictMode>
+    <RouterProvider router={route} />
+  </StrictMode>,
 )
