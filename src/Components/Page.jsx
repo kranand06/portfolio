@@ -5,11 +5,11 @@ import Skills from './Skills'
 
 function Page() {
   return (
-    <>
+    <div className='bg-[#121212]'>
     <Home />
     <About />
     <Skills />
-    </>
+    </div>
   )
 }
 
