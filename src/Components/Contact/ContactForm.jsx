@@ -19,7 +19,10 @@ function ContactForm() {
     const saveData = async () => {
         try {
             const docId = Date.now().toString();
+            const currentDate = new Date();
+            const time =(currentDate.toLocaleString());
             await setDoc(doc(db, "contact", docId), {
+                time : time,
                 id: docId,
                 userMail: mail,
                 userName: name,
