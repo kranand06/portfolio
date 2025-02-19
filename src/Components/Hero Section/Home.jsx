@@ -17,7 +17,7 @@ function Home() {
         </div>
 
         <div className='flex flex-col md:flex-row justify-center lg:justify-start space-y-4 md:space-y-0 md:space-x-4 py-12'>
-        <a href="mailto:kranand9430@gmail.com"><Button className='w-full px-6 py-3 bg-[#BB86FC] text-[#121212] text-lg md:text-xl font-normal rounded-lg shadow-md hover:bg-[#9B6FEF] transition-all hover:scale-105 duration-300' variant="contained">Contact Me!</Button></a>
+        <a href="#contact"><Button className='w-full px-6 py-3 bg-[#BB86FC] text-[#121212] text-lg md:text-xl font-normal rounded-lg shadow-md hover:bg-[#9B6FEF] transition-all hover:scale-105 duration-300' variant="contained">Contact Me!</Button></a>
           <Button className='px-6 py-3 border-[#BB86FC] text-[#BB86FC] text-lg md:text-xl font-normal rounded-lg shadow-md transition-all cursor-not-allowed hover:scale-105 duration-300' variant="outlined"  endIcon={<DownloadIcon />}>Download CV</Button>
         </div>
 
