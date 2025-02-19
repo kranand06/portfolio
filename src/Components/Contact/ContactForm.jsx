@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Button from '@mui/material/Button';
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../../firebase";
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function ContactForm() {
 
@@ -10,7 +12,10 @@ function ContactForm() {
     const [mail, setMail] = useState('');
 
     const handleSubmit = () => {
-        console.log(name, mail);
+        if (!name || !mail ) {
+            toast.error("Please fill all the fields! 🥲", { position: "bottom-right" });
+            return;
+        }
         saveData();
         setName('');
         setMail('');
@@ -20,16 +25,16 @@ function ContactForm() {
         try {
             const docId = Date.now().toString();
             const currentDate = new Date();
-            const time =(currentDate.toLocaleString());
+            const time = (currentDate.toLocaleString());
             await setDoc(doc(db, "contact", docId), {
-                time : time,
+                time: time,
                 id: docId,
                 userMail: mail,
                 userName: name,
             });
-            console.log("Data saved successfully!");
+            toast.success("Submitted Successfully! 🚀", { position: "bottom-right" });
         } catch (error) {
-            console.error("Error saving data:", error);
+            toast.error("Error in Submitting Data 🥲", { position: "bottom-right" });
         }
     };
 
@@ -59,7 +64,7 @@ function ContactForm() {
                 onClick={handleSubmit} size='large' className="w-full mt-5 bg-black px-6 py-3 text-lg sm:text-xl transition-all hover:bg-[#BB86FC] hover:text-black duration-300"
                 variant="contained" >SEND </Button>
 
-
+            <ToastContainer />
         </div>
     )
 }
