@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Button from '@mui/material/Button';
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../firebase";
 
 function ContactForm() {
 
@@ -7,11 +9,27 @@ function ContactForm() {
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
 
-    const handleSubmit = async () => {
+    const handleSubmit = () => {
         console.log(name, mail);
+        saveData();
         setName('');
         setMail('');
-    }
+    };
+
+    const saveData = async () => {
+        try {
+            const docId = Date.now().toString();
+            await setDoc(doc(db, "contact", docId), {
+                id: docId,
+                userMail: mail,
+                userName: name,
+            });
+            console.log("Data saved successfully!");
+        } catch (error) {
+            console.error("Error saving data:", error);
+        }
+    };
+
     return (
         <div className='w-80 md:w-96 lg:w-[35vw] h-auto rounded-3xl  bg-[#1a1a1a] p-6 md:p-8 shadow-lg'>
             <h1 className="text-lg sm:text-xl font-medium">To Get a follow up </h1>
