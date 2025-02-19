@@ -1,15 +1,15 @@
 const AboutJs=[
     {
         id:1,
-        title : "Web Developer",
-        img: 'icons/software-developer.png',
-        description : "I am a web developer with 2 years of experience in building websites and web applications.",
+        title : "Software Engineer",
+        img: 'icons/folder.png',
+        description : "Passionate software engineer skilled in building efficient, scalable applications. Experienced in problem-solving, and modern technologies.",
     },
     {
         id:2,
-        title : "Software Engineer",
-        img: 'icons/folder.png',
-        description : "I am a web developer with 2 years of experience in building websites and web applications.",
+        title : "Web Developer",
+        img: 'icons/software-developer.png',
+        description : "Creative web developer skilled in building responsive, user-friendly websites. Proficient in modern frameworks and delivering seamless digital experiences.",
     },
     {
         id:3,
