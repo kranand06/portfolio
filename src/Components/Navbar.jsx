@@ -24,7 +24,7 @@ function Navbar() {
 
             <header className="shadow sticky top-0 w-full z-10">
                 <div className='flex flex-row items-center justify-between p-8 bg-[#121212] mx-auto px-auto'>
-                    <Link to="/" className='text-white text-4xl md:text-5xl hover:text-[#BB86FC] duration-300  lg:text-6xl font-bold '>Portfolio</Link>
+                    <a href="#home" className='text-white text-4xl md:text-5xl hover:text-[#BB86FC] duration-300  lg:text-6xl font-bold '>Portfolio</a>
                     <div className=" hidden  w-full lg:flex lg:w-auto space-x-16   text-2xl   font-normal">
 
                         <a href="#home" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500  cursor-pointer'>Home</a>
@@ -44,7 +44,7 @@ function Navbar() {
                             onClick={handleClick}
                             className="text-white text-2xl font-normal cursor-pointer"
                         >
-                            {(anchorEl == null)? <IoMenu /> : <IoClose />}
+                            {(anchorEl == null) ? <IoMenu /> : <IoClose />}
                         </div>
                         <Menu className=''
                             id="basic-menu"
