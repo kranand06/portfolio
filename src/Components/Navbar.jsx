@@ -24,14 +24,14 @@ function Navbar() {
 
             <header className="shadow sticky top-0 w-full z-10">
                 <div className='flex flex-row items-center justify-between p-8 bg-[#121212] mx-auto px-auto'>
-                    <Link to="/" className='text-white text-4xl md:text-5xl lg:text-6xl font-bold '>Portfolio</Link>
-                    <div className=" hidden  w-full lg:flex lg:w-auto space-x-16  text-2xl font-normal">
+                    <Link to="/" className='text-white text-4xl md:text-5xl hover:text-[#BB86FC] duration-300  lg:text-6xl font-bold '>Portfolio</Link>
+                    <div className=" hidden  w-full lg:flex lg:w-auto space-x-16   text-2xl   font-normal">
 
-                        <a href="#home" className='text-white hover:text-[#BB86FC] cursor-pointer'>Home</a>
-                        <a href="#about" className='text-white hover:text-[#BB86FC] cursor-pointer'>About</a>
-                        <a href="#project" className='text-white hover:text-[#BB86FC] cursor-pointer'>Project</a>
-                        <a href="#skills" className='text-white hover:text-[#BB86FC] cursor-pointer'>Skills</a>
-                        <a href="#contact" className='text-white hover:text-[#BB86FC] cursor-pointer'>Contact</a>
+                        <a href="#home" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500  cursor-pointer'>Home</a>
+                        <a href="#about" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500 cursor-pointer'>About</a>
+                        <a href="#project" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500 cursor-pointer'>Project</a>
+                        <a href="#skills" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500 cursor-pointer'>Skills</a>
+                        <a href="#contact" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500 cursor-pointer'>Contact</a>
 
                     </div>
                     <div className='flex lg:hidden space-x-5'>
