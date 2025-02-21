@@ -27,11 +27,11 @@ function Navbar() {
                     <a href="#home" className='text-white text-4xl md:text-5xl hover:text-[#BB86FC] duration-300  lg:text-6xl font-bold '>Portfolio</a>
                     <div className=" hidden  w-full lg:flex lg:w-auto space-x-16   text-2xl   font-normal">
 
-                        <a href="#home" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500  cursor-pointer'>Home</a>
-                        <a href="#about" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500 cursor-pointer'>About</a>
-                        <a href="#project" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500 cursor-pointer'>Project</a>
-                        <a href="#skills" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500 cursor-pointer'>Skills</a>
-                        <a href="#contact" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-500 cursor-pointer'>Contact</a>
+                        <a href="#home" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-300  cursor-pointer'>Home</a>
+                        <a href="#about" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-300 cursor-pointer'>About</a>
+                        <a href="#project" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-300 cursor-pointer'>Project</a>
+                        <a href="#skills" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-300 cursor-pointer'>Skills</a>
+                        <a href="#contact" className='text-white hover:text-[#BB86FC] hover:translate-x-1 duration-300 cursor-pointer'>Contact</a>
 
                     </div>
                     <div className='flex lg:hidden space-x-5'>
